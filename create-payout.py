@@ -15,7 +15,7 @@ rand_num = random.randint(1001, 9999)
 
 confirm = input(f"Do you want to create this payout? Enter '{args.env}{rand_num}' to confirm: ")
 
-if confirm.lower() != args.env + str(rand_num):
+if confirm.lower() != args.env.lower() + str(rand_num):
     print("Payout not created")
     exit(0)
 
